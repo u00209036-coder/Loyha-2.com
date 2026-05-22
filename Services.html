@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../html.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+        <main class="id">
+      <section class="">
+        <div class="loading">
+          <!-- From Uiverse.io by chase2k25 -->
+          <div class="cards">
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <header id="head" class="bg-[#091242] py-[40px]">
+      <div class="container mx-auto flex justify-between items-center p-[20px]">
+        <img src="../img/Logo.svg" alt="" />
+        <ul class="flex gap-[40px] max-[1092px]:hidden">
+          <li>
+            <div class="flex items-center gap-2.5">
+              <img src="../img/Icon.svg" alt="icon" />
+              <div class="font-medium text-heading">
+                <div class="text-[#FFF]">Mon - Sat 9.00 - 18.00</div>
+                <div class="text-sm text-[#fff] font-normal text-body">
+                  Sunday Closed
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-2.5">
+              <img src="../img/Icon (1).svg" alt="icon" />
+              <div class="font-medium text-heading">
+                <div class="text-[#FFF]">Email</div>
+                <div class="text-sm text-[#fff] font-normal text-body">
+                  u00209036@gmail.com
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-2.5">
+              <img src="../img/Icon (2).svg" alt="icon" />
+              <div class="font-medium text-heading">
+                <div class="text-[#FFF]">Telephone</div>
+                <div class="text-sm text-[#fff] font-normal text-body">
+                  <a href="tel:+998333201018">+998333201018</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- drawer init and show -->
+        <div class="text-center hidden max-[1092px]:block">
+          <button
+            class="inline-flex items-center justify-center bg-[#0145f2]/50 rounded-[15px] text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+            type="button"
+            data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation"
+            aria-controls="drawer-navigation"
+          >
+            <svg
+              class="w-[32px] h-[32px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.4"
+                d="M18 6H6m12 4H6m12 4H6m12 4H6"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- drawer component -->
+        <div
+          id="drawer-navigation"
+          class="backdrop-blur-[8px] bg-[#091242]/50 fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-primary-soft w-80 border-e border-default"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <div
+            class="border-b border-default border-[#fff] pb-4 flex items-center"
+          >
+            <a
+              href="https://flowbite.com/"
+              class="flex items-center space-x-2 rtl:space-x-reverse"
+            >
+              <img src="../img/Logo.svg" alt="logo" />
+            </a>
+            <button
+              type="button"
+              data-drawer-hide="drawer-navigation"
+              aria-controls="drawer-navigation"
+              class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 color-[#fff]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only cursor-pointer">Close menu</span>
+            </button>
+          </div>
+          <div class="py-5 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li
+                class="text-[#fff] bg-[#091242] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  href="/index.html"
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  ><div class="p-5">Home</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./about.html"
+                  ><div class="p-5">About</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./Project.html"
+                  ><div class="p-5">Project</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./contact.html"
+                  ><div class="p-5">Contact</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./Services.html"
+                  ><div class="p-5">Service</div>
+                </a>
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./blog.html"
+                  ><div class="p-5">blog</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./News.html"
+                >
+                  <div class="p-5">Team</div></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      class="bg-[url(../s-img/bg.png)] bg-no-repaet bg-cover bg-center max-[1092px]:pt-[176px]"
+    >
+      <section class="bg-[#000]/40 max-[1092px]:hidden">
+        <nav
+          class="flex justify-between items-center container mx-auto px-[20px]"
+        >
+          <ul class="flex gap-[60px] text-[#fff]">
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./Project.html"
+                >Project</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./Services.html"
+                >Servise</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./News.html"
+                >Team</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center">
+            <ul class="flex gap-[30px] mr-[50px] max-[1280px]:hidden">
+              <li>
+                <a href="https://www.instagram.com/">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="../img/Instagram.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/?locale=ru_RU">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="../img/Facebook.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/?lang=ru">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="../img/Twitter.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://uz.linkedin.com/">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="../img/Linkdin.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+            <button
+              class="w-[216px] h-[78px] bg-[#fff] hover:bg-[#FFDA56] transition-[0.3s] cursor-pointer"
+            >
+              Request Quote
+            </button>
+          </div>
+        </nav>
+      </section>
+      <section class="container mx-auto p-[20px]">
+        <h1 class="pt-[150px] pb-[200px] text-[60px] text-[#fff] font-bold">
+          Our Logistics Service
+        </h1>
+      </section>
+    </main>
+    <br />
+    <br />
+    <main class="mx-auto container mx-auto">
+      <section class="container mx-auto px-[20px]">
+        <h1 data-aos="zoom-in" class="text-[35px] text-center">Our Logistics Services</h1>
+        <br />
+        <br />
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[100px] mx-auto justify-center px-auto max-w-[1600px]"
+        >
+          <div class="max-w-[270px]">
+            <img data-aos="zoom-in" src="../img/Icon (3).svg" alt="" />
+            <br />
+            <h1 data-aos="zoom-in" class="text-[25px]">Sea Transport Services</h1>
+            <br />
+            <p data-aos="zoom-in" class="text-[16px] texy-[#666C89]">
+              Following the quality of our service thus having gained trust of
+              our many clients.
+            </p>
+          </div>
+          <div class="max-w-[270px]">
+            <img data-aos="zoom-in" src="../img/Icon (4).svg" alt="" />
+            <br />
+            <h1 data-aos="zoom-in" class="text-[25px]">Warehousing Services</h1>
+            <br />
+            <p data-aos="zoom-in" class="text-[16px] texy-[#666C89]">
+              Following the quality of our service thus having gained trust of
+              our many clients.
+            </p>
+          </div>
+          <div class="max-w-[270px]">
+            <img data-aos="zoom-in" src="../img/Icon (7).svg" alt="" />
+            <br />
+            <h1 data-aos="zoom-in" class="text-[25px]">Air Fright Services</h1>
+            <br />
+            <p data-aos="zoom-in" class="text-[16px] texy-[#666C89]">
+              Following the quality of our service thus having gained trust of
+              our many clients.
+            </p>
+          </div>
+          <div class="max-w-[270px]">
+            <img data-aos="zoom-in" src="../Abaud.img/Icon.png" alt="" />
+            <br />
+            <h1 data-aos="zoom-in" class="text-[25px]">Project & Exhibition</h1>
+            <br />
+            <p data-aos="zoom-in" class="text-[16px] texy-[#666C89]">
+              Following the quality of our service thus having gained trust of
+              our many clients.
+            </p>
+          </div>
+          <div class="max-w-[270px]">
+            <img data-aos="zoom-in" src="../img/Icon (8).svg" alt="" />
+            <br />
+            <h1 data-aos="zoom-in" class="text-[25px]">Local Shipping Services</h1>
+            <br />
+            <p data-aos="zoom-in" class="text-[16px] texy-[#666C89]">
+              Following the quality of our service thus having gained trust of
+              our many clients.
+            </p>
+          </div>
+          <div class="max-w-[270px]">
+            <img data-aos="zoom-in" src="../Abaud.img/Icon (1).png" alt="" />
+            <br />
+            <h1 data-aos="zoom-in" class="text-[25px]">Customer Clearance</h1>
+            <br />
+            <p data-aos="zoom-in" class="text-[16px] texy-[#666C89]">
+              Following the quality of our service thus having gained trust of
+              our many clients.
+            </p>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+      <center>
+        <button data-aos="zoom-in"
+          class="w-[194px] h-[60px] text-[#fff] bg-[#1C1F35] hover:bg-[#FFB629] hover:scale-115 transition-[0.3s] hover:text-[#000] cursor-pointer"
+        >
+          Learn More
+        </button>
+      </center>
+    </main>
+    <br />
+    <br />
+    <main>
+      <section class="container mx-auto p-[20px]">
+        <h1 data-aos="zoom-in" class="text-[35px] font-bold text-center">How We Works</h1>
+        <br /><br />
+        <div class="blokc xl:flex items-center gap-[50px]">
+          <img data-aos="zoom-in"
+            src="../s-img/Image (11).png"
+            alt=""
+            class="max-w-[756px] w-full"
+          />
+          <div class="max-w-[534px] h-[412px] flex flex-col justify-between">
+            <div class="flex gap-[10px]">
+              <img data-aos="zoom-in"
+                src="../s-img/Icon (2).png"
+                alt=""
+                class="w-[50px] h-[50px]"
+              />
+              <div class="">
+                <h1 data-aos="zoom-in" class="text-[25px] font-bold">Warehousing Services</h1>
+                <p data-aos="zoom-in" class="text-[16px] text-[#666C89]">
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-[10px]">
+              <img data-aos="zoom-in"
+                src="../s-img/Sheild Icon.png"
+                alt=""
+                class="w-[50px] h-[50px]"
+              />
+              <div class="">
+                <h1 data-aos="zoom-in" class="text-[25px] font-bold">Safety & Quality</h1>
+                <p data-aos="zoom-in" class="text-[16px] text-[#666C89]">
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-[10px]">
+              <img data-aos="zoom-in"
+                src="../s-img/Environment Icon.png"
+                alt=""
+                class="w-[50px] h-[50px]"
+              />
+              <div class="">
+                <h1 data-aos="zoom-in" class="text-[25px] font-bold">Care for Environment</h1>
+                <p data-aos="zoom-in" class="text-[16px] text-[#666C89]">
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br />
+    <br />
+
+    <main>
+      <section class="container mx-auto">
+        <h2 data-aos="zoom-in" class="p-[20px]">Testimonial</h2>
+        <h1 data-aos="zoom-in" class="px-[20px] text-[35px]">What Our Customer Say</h1>
+        <br />
+        <div data-aos="zoom-in"
+          id="animation-carousel"
+          class="relative max-w-[1200px] mx-auto p-[20px]"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+            <!-- Item 1 -->
+            <div
+              class="hidden block md:flex bg-[#fff] duration-200 ease-linear"
+              data-carousel-item
+            >
+              <div class="coment bg-[#fff] max-w-[600px] p-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="../img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2015
+                      </div>
+                    </div>
+                  </div>
+                  <img src="../img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="../img/Star (1).svg" alt="" />
+              </div>
+              <div
+                class="coment-2 bg-[#091242] max-w-[600px] text-[#fff] p-[20px]"
+              >
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="../img/User (1).png"
+                        alt=""
+                        width="30"
+                        height=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2012
+                      </div>
+                    </div>
+                  </div>
+                  <img src="../img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="../img/Star (1).svg" alt="" />
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="hidden block md:flex bg-[#fff] duration-200 ease-linear"
+              data-carousel-item
+            >
+              <div class="coment bg-[#fff] max-w-[600px] p-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="../img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2013
+                      </div>
+                    </div>
+                  </div>
+                  <img src="../img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="../img/Star (1).svg" alt="" />
+              </div>
+              <div
+                class="coment-2 bg-[#091242] max-w-[600px] text-[#fff] p-[20px]"
+              >
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="../img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2017
+                      </div>
+                    </div>
+                  </div>
+                  <img src="../img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="../img/Star (1).svg" alt="" />
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="hidden block md:flex bg-[#fff] duration-200 ease-linear"
+              data-carousel-item="active"
+            >
+              <div class="coment bg-[#fff] max-w-[600px] p-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="../img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2016
+                      </div>
+                    </div>
+                  </div>
+                  <img src="../img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="../img/Star (1).svg" alt="" />
+              </div>
+              <div
+                class="coment-2 bg-[#091242] max-w-[600px] text-[#fff] p-[20px]"
+              >
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="../img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2013
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    class="max-[700px]:max-w-[20px]"
+                    src="../img/_.svg"
+                    alt=""
+                  />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="../img/Star (1).svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- Slider controls -->
+
+          <button
+            type="button"
+            class="absolute top-[-230px] left-[1050px] max-[767px]:left-[450px] max-[767px]:top-[-140px] max-[1460px]:left-[1050px] max-[1280px]:left-[870px] max-[1023px]:left-[600px] max-[1460px]:top-[-230px] max-[600px]:left-[200px] start-0 z-30 flex items-center justify-end h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-12 h-12 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-[#FFB629] group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none rounded-full"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m15 19-7-7 7-7"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-[-230px] max-[1460px]:top-[-230px] max-[767px]:top-[-140px] end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-12 h-12 rounded-base bg-[#FFB629] dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-[#091242] group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none rounded-full"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m9 5 7 7-7 7"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <br />
+    <br />
+    <main>
+      <section class="container mx-auto p-[20px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[40px]">
+          <div class="flex items-center gap-[20px]">
+            <h1 data-aos="zoom-in" class="text-[54px] font-bold">24</h1>
+            <img data-aos="zoom-in" src="../p-img/Pattern.png" alt="" />
+            <p data-aos="zoom-in">Our Location</p>
+          </div>
+          <div class="flex items-center gap-[20px]">
+            <h1 data-aos="zoom-in" class="text-[54px] font-bold">1294</h1>
+            <img data-aos="zoom-in" src="../p-img/Pattern.png" alt="" />
+            <p data-aos="zoom-in">Delivered Packages</p>
+          </div>
+          <div class="flex items-center gap-[20px]">
+            <h1 data-aos="zoom-in" class="text-[54px] font-bold">3594</h1>
+            <img data-aos="zoom-in" src="../p-img/Pattern.png" alt="" />
+            <p data-aos="zoom-in">Satisfied Clients</p>
+          </div>
+          <div class="flex items-center gap-[20px]">
+            <h1 data-aos="zoom-in" class="text-[54px] font-bold">247+</h1>
+            <img data-aos="zoom-in" src="../p-img/Pattern.png" alt="" />
+            <p data-aos="zoom-in">Owned Vehicles</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <br />
+    <br />
+    <main>
+      <section class="container mx-auto p-[20px]">
+        <img data-aos="zoom-in" src="../s-img/Image (12).png" alt="" class="w-full mx-auto" />
+        <br />
+        <div class="flex gap-[10px] items-center">
+            <img data-aos="zoom-in" src="../s-img/Icon (3).png" alt="" class="w-[50px] h-[50px]">
+            <h1 data-aos="zoom-in" class="text-[35px] font-bold">Sea Transport Services</h1>
+        </div>
+            <br>
+            
+            <p data-aos="zoom-in" class="text-[#666C89] text-[16px]">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+
+Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+
+</p>
+        
+      </section>
+    </main>
+<br>
+<br>
+<main>
+    <section class="conatiner mx-auto p-[20px] ">
+        <div class="container mx-auto flex max-[1150px]:block  items-center gap-[20px] justify-between">
+        <div class=" max-[1150px]:w-full">
+            <h1 data-aos="zoom-in" class="text-[35px] font-bold">Benefit of Service</h1>
+            <br>
+            <p data-aos="zoom-in" class="text-[16px] text-[#666C89] ">Sed ut perspiciatis, unde omnis iste natu volupta temaccu santium doloremque laudantium, totam rem quae ab illo inventore veritatis.</p>
+            <br>
+            
+<div id="accordion-arrow" data-accordion="collapse" data-active-classes="bg-neutral-primary text-heading" data-inactive-classes="text-body">
+  <h2 id="accordion-arrow-heading-1">
+    <button data-aos="zoom-in" type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3 cursor-pointer" data-accordion-target="#accordion-arrow-body-1" aria-expanded="true" aria-controls="accordion-arrow-body-1">
+      <span data-aos="zoom-in">Clearance and compliance service</span>
+    </button>
+  </h2>
+  <div id="accordion-arrow-body-1" class="hidden" aria-labelledby="accordion-arrow-heading-1">
+    <div class="py-5 border-b border-default text-body">
+      <p data-aos="zoom-in">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos non consequatur blanditiis eaque omnis, ea quae. Sapiente earum excepturi saepe nisi corporis veritatis explicabo expedita, rem esse quod, in porro. Maxime illo illum mollitia dolorum quae blanditiis nam distinctio. Temporibus tenetur quae nihil sed hic maiores ratione facere? Praesentium hic quis rem nihil. Officia, nam pariatur! Tempore, culpa. Eligendi ipsa illum veritatis fuga natus inventore, enim nisi voluptatem maiores nemo, sunt cupiditate! Rerum unde, perspiciatis ipsa aliquid neque impedit cumque tempora odit animi voluptatem alias? Fugit, placeat beatae?
+      </p>
+    </div>
+  </div>
+  <h2 id="accordion-arrow-heading-2">
+    <button data-aos="zoom-in" type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3 cursor-pointer" data-accordion-target="#accordion-arrow-body-2" aria-expanded="false" aria-controls="accordion-arrow-body-2">
+      <span data-aos="zoom-in">Automate your business elis tristique</span>
+      <svg class="w-5 h-5 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.529 9.988a2.502 2.502 0 1 1 5 .191A2.441 2.441 0 0 1 12 12.582V14m-.01 3.008H12M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+      </svg>
+    </button>
+  </h2>
+  <div id="accordion-arrow-body-2" class="hidden" aria-labelledby="accordion-arrow-heading-2">
+    <div class="py-5 border-b border-default text-body">
+      <p data-aos="zoom-in" class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laudantium ad pariatur! Fugit fugiat soluta sunt eos asperiores aperiam porro vel perspiciatis, itaque assumenda repellendus qui fuga nemo placeat ut quis dolorem mollitia eveniet aspernatur earum pariatur. Sint libero nesciunt mollitia est, maiores quo animi esse quibusdam vero error eveniet natus velit odit autem enim vel harum tempora? Ipsam recusandae, rem alias earum odit reprehenderit voluptates placeat sed minima ea provident eum explicabo nobis, et nisi!
+
+      </p>
+    </div>
+  </div>
+  <h2 id="accordion-arrow-heading-3">
+    <button data-aos="zoom-in" type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3 cursor-pointer" data-accordion-target="#accordion-arrow-body-3" aria-expanded="false" aria-controls="accordion-arrow-body-3">
+      <span data-aos="zoom-in">Saving Time to Deal with commodo iaculis</span>
+      <svg class="w-5 h-5 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-arrow-body-3" class="hidden" aria-labelledby="accordion-arrow-heading-3">
+    <div class="py-5 text-body border-b border-default">
+   <p data-aos="zoom-in" class="mb-2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cupiditate ad fuga sed ipsam atque veniam molestias consequuntur, obcaecati asperiores maiores reiciendis ullam repellendus ab libero quaerat officia tempore autem quod vero laboriosam omnis aliquid fugit? Ab quos natus commodi voluptatem fugit non illum hic voluptatum vitae alias id, blanditiis facilis quam, illo tempora voluptatibus quaerat!
+   </p>
+   
+    </div>
+  </div>
+</div>
+
+        </div>
+        <br>
+        <img data-aos="zoom-in" src="../s-img/Photo (3).png" alt="" class=" w-full">
+    </div>
+    </section>
+</main>
+<br>
+<br>
+<main>
+    <section class="conatiner mx-auto p-[20px]">
+      <div class="w-full mx-auto block lg:flex gap-[50px] items-center">
+<iframe data-aos="zoom-in"  height="570" src="https://www.youtube.com/embed/6qNYpu5qs9Y" title="2006 Ford Transit [2.2 DURATORQ TDCI 115HP] |0-100| POV Test Drive #1399 Joe Black" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full rounded-[20px]"></iframe>
+<div class="max-w-[500px]">
+    <h1 data-aos="zoom-in" class="text-[35px] font-bold">How It Works</h1>
+    <br>
+    <p data-aos="zoom-in" class="text-[16px] text-[#666C89]">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, doloremque laudantium.
+
+Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.</p>
+</div>
+      </div>
+    </section>
+</main>
+<br>
+<br>
+ <main>
+      <img data-aos="zoom-in" src="../img-2/Image (6).png" alt="" class="w-full" />
+      <section class="bg-[#091242]">
+        <br />
+        <div
+          class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 container mx-auto justify-between p-[20px] gap-[20px]"
+        >
+          <div class="max-w-[319px] flex flex-col mr-[0px] sm:mr-[100px]">
+            <img data-aos="zoom-in" src="../img/Logo.svg" alt="" class="max-w-[317px] w-full" />
+            <br />
+            <br />
+
+            <h1 data-aos="zoom-in" class="text-[16px] text-[#fff]">
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy collaborative thinking to further the overall value
+              proposition.
+            </h1>
+            <br />
+            <div class="">
+              <div class="flex items-center gap-2.5">
+                <img data-aos="zoom-in" src="../img/Icon (1).svg" alt="icon" />
+                <div class="font-medium text-heading">
+                  <div data-aos="zoom-in" class="text-[#FFF]">Email</div>
+                  <div data-aos="zoom-in" class="text-sm text-[#fff] font-normal text-body">
+                    u00209036@gmail.com
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="flex items-center gap-2.5">
+                <img data-aos="zoom-in" src="../img/Icon (2).svg" alt="icon" />
+                <div class="font-medium text-heading">
+                  <div data-aos="zoom-in" class="text-[#FFF]">Telephone</div>
+                  <div data-aos="zoom-in" class="text-sm text-[#fff] font-normal text-body">
+                    <a href="tel:+998333201018">+998333201018</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ml-[100px]">
+            <h1 data-aos="zoom-in" class="text-[#fff] text-[25px] mb-[0px] sm:mb-[70px]">Pages</h1>
+            <ul class="text-[#fff] gap-[20px] flex flex-col">
+              <li data-aos="zoom-in"><a href="./about.html">Abaut us </a></li>
+              <li data-aos="zoom-in"><a href="./Project.html">Project </a></li>
+              <li data-aos="zoom-in"><a href="./Service.html">Service </a></li>
+              <li data-aos="zoom-in"><a href="./blog.html">Blog </a></li>
+              <li data-aos="zoom-in"><a href="./News.html">News</a></li>
+            </ul>
+          </div>
+          <div class="ml-[0px] sm:ml-[70px]">
+            <h1 data-aos="zoom-in" class="text-[#fff] text-[25px] mb-[70px]">Utility</h1>
+            <ul class="text-[#fff] gap-[20px] flex flex-col">
+              <li data-aos="zoom-in"><a href="./about.html">Style Guide</a></li>
+              <li data-aos="zoom-in"><a href="./Project.html">Changelog</a></li>
+              <li data-aos="zoom-in"><a href="./Service.html">Licenses </a></li>
+              <li data-aos="zoom-in"><a href="./blog.html">Protected</a></li>
+              <li data-aos="zoom-in"><a href="./News.html">Not Found </a></li>
+            </ul>
+          </div>
+          <div class="max-w-[317px]">
+            <h1 data-aos="zoom-in" class="text-[#fff] text-[25px] mb-[70px]">Subscribe</h1>
+            <form>
+              <input data-aos="zoom-in"
+                type="email"
+                name=""
+                id=""
+                class="bg-transparent border-[#fff] text-[#fff] w-full"
+                placeholder="Email here*"
+              />
+            </form>
+            <br />
+            <div class="block sm:flex justify-between items-center gap-[20px]">
+              <button data-aos="zoom-in"
+                class="w-[148px] mr-[20px] h-[60px] bg-[#FFDA56] hover:scale-110 transition-[0.3s] mb-[20px]"
+                type="submit"
+              >
+                Send Now
+              </button>
+
+              <br />
+              <ul class="flex gap-[20px]">
+                <li data-aos="zoom-in">
+                  <a href="https://www.facebook.com/?locale=ru_RU">
+                    <img
+                      class="hover:scale-125 transition-[0.3s] w-[24px] w-full"
+                      src="./img/Facebook.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li data-aos="zoom-in">
+                  <a href="https://x.com/?lang=ru">
+                    <img data-aos="zoom-in"
+                      class="hover:scale-125 transition-[0.3s] w-[24px] w-full"
+                      src="./img/Twitter.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li data-aos="zoom-in">
+                  <a href="https://uz.linkedin.com/">
+                    <img data-aos="zoom-in"
+                      class="hover:scale-125 transition-[0.3s] w-[24px] w-full"
+                      src="./img/Linkdin.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+        <hr data-aos="zoom-in" class="text-[#FFFFFF14]" />
+        <br />
+        <div class="max-w-[1200px] mx-auto block md:flex justify-between">
+          <h1 data-aos="zoom-in" class="text-[16px] text-[#fff]">
+            Copyright © TransitFlow | Designed by VictorFlow - Powered by
+            Webflow.
+          </h1>
+          <br />
+          <ul class="text-[#8388A7] flex gap-[30px]">
+            <li data-aos="zoom-in">Style Guide</li>
+            <li data-aos="zoom-in">Licenses</li>
+            <li data-aos="zoom-in">Changelog</li>
+            <li data-aos="zoom-in">Password</li>
+          </ul>
+        </div>
+        <br />
+      </section>
+    </main>
+      <button class="btn-scroll hidden p-[10px] flex justify-center items-center rounded-full bg-[#1C1F35E8] fixed bottom-[30px] right-[30px]">
+ <a href="#head" class="">
+<svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+</svg>
+</a>
+      </button>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+<script src="../js/servise.js"></script>
+  </body>
+</html>

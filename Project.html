@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../html.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+        <main class="id">
+      <section class="">
+        <div class="loading">
+          <!-- From Uiverse.io by chase2k25 -->
+          <div class="cards">
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <header id="head" class="bg-[#091242] py-[40px]">
+      <div class="container mx-auto flex justify-between items-center p-[20px]">
+        <img src="../img/Logo.svg" alt="" />
+        <ul class="flex gap-[40px] max-[1092px]:hidden">
+          <li>
+            <div class="flex items-center gap-2.5">
+              <img src="../img/Icon.svg" alt="icon" />
+              <div class="font-medium text-heading">
+                <div class="text-[#FFF]">Mon - Sat 9.00 - 18.00</div>
+                <div class="text-sm text-[#fff] font-normal text-body">
+                  Sunday Closed
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-2.5">
+              <img src="../img/Icon (1).svg" alt="icon" />
+              <div class="font-medium text-heading">
+                <div class="text-[#FFF]">Email</div>
+                <div class="text-sm text-[#fff] font-normal text-body">
+                  u00209036@gmail.com
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-2.5">
+              <img src="../img/Icon (2).svg" alt="icon" />
+              <div class="font-medium text-heading">
+                <div class="text-[#FFF]">Telephone</div>
+                <div class="text-sm text-[#fff] font-normal text-body">
+                  <a href="tel:+998333201018">+998333201018</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- drawer init and show -->
+        <div class="text-center hidden max-[1092px]:block">
+          <button
+            class="inline-flex items-center justify-center bg-[#0145f2]/50 rounded-[15px] text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+            type="button"
+            data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation"
+            aria-controls="drawer-navigation"
+          >
+            <svg
+              class="w-[32px] h-[32px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.4"
+                d="M18 6H6m12 4H6m12 4H6m12 4H6"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- drawer component -->
+        <div
+          id="drawer-navigation"
+          class="backdrop-blur-[8px] bg-[#091242]/50 fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-primary-soft w-80 border-e border-default"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <div
+            class="border-b border-default border-[#fff] pb-4 flex items-center"
+          >
+            <a
+              href="https://flowbite.com/"
+              class="flex items-center space-x-2 rtl:space-x-reverse"
+            >
+              <img src="../img/Logo.svg" alt="logo" />
+            </a>
+            <button
+              type="button"
+              data-drawer-hide="drawer-navigation"
+              aria-controls="drawer-navigation"
+              class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 color-[#fff]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only cursor-pointer">Close menu</span>
+            </button>
+          </div>
+          <div class="py-5 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li
+                class="text-[#fff] bg-[#091242] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  href="../index.html"
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  ><div class="p-5">Home</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./about.html"
+                  ><div class="p-5">About</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./Project.html"
+                  ><div class="p-5">Project</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./contact.html"
+                  ><div class="p-5">Contact</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./Services.html"
+                  ><div class="p-5">Service</div>
+                </a>
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./blog.html"
+                  ><div class="p-5">blog</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./News.html"
+                >
+                  <div class="p-5">Team</div></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      class="bg-[url(../p-img/bg.png)] bg-no-repaet bg-cover bg-center max-[1092px]:pt-[176px]"
+    >
+      <section class="bg-[#000]/40 max-[1092px]:hidden">
+        <nav
+          class="flex justify-between items-center container mx-auto px-[20px]"
+        >
+          <ul class="flex gap-[60px] text-[#fff]">
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./Project.html"
+                >Project</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./Services.html"
+                >Servise</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./News.html"
+                >Team</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center">
+            <ul class="flex gap-[30px] mr-[50px] max-[1280px]:hidden">
+              <li>
+                <a href="https://www.instagram.com/">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="../img/Instagram.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/?locale=ru_RU">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="../img/Facebook.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/?lang=ru">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="../img/Twitter.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://uz.linkedin.com/">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="../img/Linkdin.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+            <button
+              class="w-[216px] h-[78px] bg-[#fff] hover:bg-[#FFDA56] transition-[0.3s] cursor-pointer"
+            >
+              Request Quote
+            </button>
+          </div>
+        </nav>
+      </section>
+      <section class="container mx-auto p-[20px]">
+        <h1 class="pt-[150px] pb-[200px] text-[60px] text-[#fff] font-bold">
+          Our Project
+        </h1>
+      </section>
+    </main>
+
+    <br />
+    <br />
+    <main>
+      <section class="container mx-auto p-[20px]">
+        <center>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] max-w-[1200px]"
+          >
+            <div data-aos="zoom-in"
+              class="max-w-[380px] bg-[url(../p-img/BG..png)] bg-cover bg-no-repaet bg-center p-[32px] h-[346px]"
+            >
+              <a href="" class=" ">
+                <div data-aos="zoom-in"
+                  class="bg-transparent hover:bg-[#1C1F35E8] text-transparent hover:text-[#fff] transition-[0.3s] h-[292px] flex justify-center items-center text-[25px]"
+                >
+                  read more
+                </div>
+              </a>
+            </div>
+            <div data-aos="zoom-in"
+              class="max-w-[380px] bg-[url(../p-img/1.png)] bg-cover bg-no-repaet bg-center p-[32px] h-[346px]"
+            >
+              <a href="" class=" ">
+                <div data-aos="zoom-in"
+                  class="bg-transparent hover:bg-[#1C1F35E8] text-transparent hover:text-[#fff] transition-[0.3s] h-[292px] flex justify-center items-center text-[25px]"
+                >
+                  read more
+                </div>
+              </a>
+            </div>
+            <div data-aos="zoom-in"
+              class="max-w-[380px] bg-[url(../p-img/2.png)] bg-cover bg-no-repaet bg-center p-[32px] h-[346px]"
+            >
+              <a href="" class=" ">
+                <div data-aos="zoom-in"
+                  class="bg-transparent hover:bg-[#1C1F35E8] text-transparent hover:text-[#fff] transition-[0.3s] h-[292px] flex justify-center items-center text-[25px]"
+                >
+                  read more
+                </div>
+              </a>
+            </div>
+            <div data-aos="zoom-in"
+              class="max-w-[380px] bg-[url(../p-img/4.png)] bg-cover bg-no-repaet bg-center p-[32px] h-[346px]"
+            >
+              <a href="" class=" ">
+                <div data-aos="zoom-in"
+                  class="bg-transparent hover:bg-[#1C1F35E8] text-transparent hover:text-[#fff] transition-[0.3s] h-[292px] flex justify-center items-center text-[25px]"
+                >
+                  read more
+                </div>
+              </a>
+            </div>
+            <div data-aos="zoom-in"
+              class="max-w-[380px] bg-[url(../p-img/5.png)] bg-cover bg-no-repaet bg-center p-[32px] h-[346px]"
+            >
+              <a href="" class=" ">
+                <div data-aos="zoom-in"
+                  class="bg-transparent hover:bg-[#1C1F35E8] text-transparent hover:text-[#fff] transition-[0.3s] h-[292px] flex justify-center items-center text-[25px]"
+                >
+                  read more
+                </div>
+              </a>
+            </div>
+            <div data-aos="zoom-in"
+              class="max-w-[380px] bg-[url(../p-img/6.png)] bg-cover bg-no-repaet bg-center p-[32px] h-[346px]"
+            >
+              <a href="" class=" ">
+                <div
+                  class="bg-transparent hover:bg-[#1C1F35E8] text-transparent hover:text-[#fff] transition-[0.3s] h-[292px] flex justify-center items-center text-[25px]"
+                >
+                  read more
+                </div>
+              </a>
+            </div>
+          </div>
+        </center>
+      </section>
+    </main>
+    <br />
+    <br />
+
+    <main>
+      <section class="container mx-auto p-[20px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[40px]">
+          <div class="flex items-center gap-[20px]">
+            <h1 data-aos="zoom-in" class="text-[54px] font-bold">24</h1>
+            <img data-aos="zoom-in" src="../p-img/Pattern.png" alt="" />
+            <p data-aos="zoom-in">Our Location</p>
+          </div>
+          <div class="flex items-center gap-[20px]">
+            <h1 data-aos="zoom-in" class="text-[54px] font-bold">1294</h1>
+            <img data-aos="zoom-in" src="../p-img/Pattern.png" alt="" />
+            <p data-aos="zoom-in">Delivered Packages</p>
+          </div>
+          <div class="flex items-center gap-[20px]">
+            <h1 data-aos="zoom-in" class="text-[54px] font-bold">3594</h1>
+            <img data-aos="zoom-in" src="../p-img/Pattern.png" alt="" />
+            <p data-aos="zoom-in">Satisfied Clients</p>
+          </div>
+          <div class="flex items-center gap-[20px]">
+            <h1 data-aos="zoom-in" class="text-[54px] font-bold">247+</h1>
+            <img data-aos="zoom-in" src="../p-img/Pattern.png" alt="" />
+            <p data-aos="zoom-in">Owned Vehicles</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br />
+    <br />
+     <br>
+    <main>
+      <section class="container mx-auto p-[20px]">
+        <center>
+        <div class="max-w-[1200px] flex max-[830px]:block justify-between items-center gap-[30px]">
+          <img data-aos="zoom-in" src="../p-img/BG..png" alt="" class="max-w-[642px] w-full h-[380px]">
+          <div class="">
+            <h1 data-aos="zoom-in" class="text-[35px] font-bold ">Project Details</h1>
+            <br>
+            <ul class="flex flex-col gap-[20px]">
+                <li data-aos="zoom-in"> <span class="font-bold">Customer   : </span> Warehouse Transportaion</li>
+                 <li data-aos="zoom-in"> <span class="font-bold">Category    : </span> Warehouse Transportaion</li>
+                  <li data-aos="zoom-in"> <span class="font-bold">Date             : </span> 12 December, 2022</li>
+                   <li data-aos="zoom-in"> <span class="font-bold">Status         :</span> Completed</li>
+                    <li data-aos="zoom-in"> <span class="font-bold">Tags             : </span> Life Style Travel , Best Delivery</li>
+            </ul>
+          </div>
+        </div>
+    </center>
+      </section>
+    </main>
+<br>
+<br>
+<main>
+    <section class="container mx-auto p-[20px] ">
+   <h1 data-aos="zoom-in" class="text-[35px] font-bold">Wharehouse Transportation</h1>
+   <p data-aos="zoom-in">Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit Integer adipiscing erat eget risus sollicitudin pellentesque non erat. Maecenas nibh dolor malesuada sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere.</p>
+   <br>
+   
+<div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-neutral-primary text-heading" data-inactive-classes="text-body">
+  <h2 id="accordion-flush-heading-1">
+    <button data-aos="zoom-in" type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+      <span data-aos="zoom-in">National Customer Service Center – 24 hours a day.</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+    <div data-aos="zoom-in" class="py-5 border-b border-default text-body">
+     <p data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti saepe, veniam temporibus voluptatem adipisci in vero rerum et explicabo odit dicta recusandae deleniti at quia cupiditate praesentium similique. Labore doloribus, facere nesciunt aliquam quam, fugit rerum repudiandae sit nemo, distinctio magni. Nostrum, expedita necessitatibus voluptatibus sit autem velit? Optio dolorum, veniam, cupiditate eum modi odit sint error hic nemo voluptatum quae laborum cumque, officia illo cum rem esse minima nisi dicta? Cumque non vero quod perferendis sapiente!</p>
+    </div>
+  </div>
+  <h2 id="accordion-flush-heading-2">
+    <button data-aos="zoom-in" type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+      <span data-aos="zoom-in">Online shipping navigator lets you quote, book, and track shipments</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+    <div class="py-5 border-b border-default text-body">
+      <h1 data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni libero itaque reprehenderit accusamus sapiente necessitatibus eaque, distinctio possimus nesciunt praesentium quos mollitia odio assumenda. Eos porro cum impedit, facilis, officia necessitatibus error eveniet consequatur perspiciatis soluta quibusdam in dignissimos hic rerum dolore qui corporis alias quaerat amet optio dicta ex. Quisquam impedit nisi quae nobis, harum possimus at nihil ea esse blanditiis cumque rerum sint, quidem consequuntur ullam numquam quo animi molestiae enim autem? Dicta quisquam asperiores eveniet atque. Nemo officiis culpa maiores.</h1>
+    </div>
+  </div>
+  <h2 id="accordion-flush-heading-3">
+    <button data-aos="zoom-in" type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+      <span data-aos="zoom-in">Your Logistics Needs Are At The Heart Of Our Business</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+    <div data-aos="zoom-in" class="py-5 text-body border-b border-default">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nesciunt id laborum iure aliquid praesentium aut esse a veniam ducimus. Nesciunt quod aliquid molestias. Voluptatum, voluptatibus! Minima temporibus quasi velit ex iusto animi expedita eos laboriosam esse quia commodi dolores deserunt quidem tempora officiis voluptatibus dolore, delectus laudantium. Quae repudiandae commodi autem explicabo.
+    </div>
+  </div>
+</div>
+
+    </section>
+</main>
+<br>
+<br>
+<main>
+    <section class="container mx-auto p-[20px]">
+    <h1  data-aos="zoom-in"class="text-[35px] font-bold">Our Project Transportation</h1>
+    <br>
+    <p data-aos="zoom-in">Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit Integer adipiscing erat eget risus sollicitudin pellentesque non erat. Maecenas nibh dolor malesuada sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere.</p>
+    <br>
+    <br>
+    <center>
+<iframe data-aos="zoom-in" height="570" src="https://www.youtube.com/embed/e-wUjWyh_Ko" title="2021 Ford Transit 2.2 MT - ТЕСТ-ДРАЙВ ОТ ПЕРВОГО ЛИЦА" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="max-w-[1200px] w-full rounded-[20px] shadow-xl"></iframe>
+</center>
+    </section>
+</main>
+
+
+
+<main>
+      <img data-aos="zoom-in" src="./img-2/Image (6).png" alt="" class="w-full" />
+      <section class="bg-[#091242]">
+        <br />
+        <div
+          class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 container mx-auto justify-between p-[20px] gap-[20px]"
+        >
+          <div data-aos="zoom-in" class="max-w-[319px] flex flex-col mr-[0px] sm:mr-[100px]">
+            <img src="./img/Logo.svg" alt="" class="max-w-[317px] w-full" />
+            <br />
+            <br />
+
+            <h1 data-aos="zoom-in" class="text-[16px] text-[#fff]">
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy collaborative thinking to further the overall value
+              proposition.
+            </h1>
+            <br />
+            <div class="">
+              <div class="flex items-center gap-2.5">
+                <img data-aos="zoom-in" src="../img/Icon (1).svg" alt="icon" />
+                <div class="font-medium text-heading">
+                  <div data-aos="zoom-in" class="text-[#FFF]">Email</div>
+                  <div data-aos="zoom-in" class="text-sm text-[#fff] font-normal text-body">
+                    u00209036@gmail.com
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="flex items-center gap-2.5">
+                <img data-aos="zoom-in" src="../img/Icon (2).svg" alt="icon" />
+                <div class="font-medium text-heading">
+                  <div data-aos="zoom-in" class="text-[#FFF]">Telephone</div>
+                  <div data-aos="zoom-in" class="text-sm text-[#fff] font-normal text-body">
+                    <a href="tel:+998333201018">+998333201018</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ml-[100px]">
+            <h1 data-aos="zoom-in" class="text-[#fff] text-[25px] mb-[0px] sm:mb-[70px]">Pages</h1>
+            <ul class="text-[#fff] gap-[20px] flex flex-col">
+              <li data-aos="zoom-in"><a href="./about.html">Abaud us </a></li>
+              <li data-aos="zoom-in"><a href="./Project.html">Project </a></li>
+              <li data-aos="zoom-in"><a href="./Service.html">Service </a></li>
+              <li data-aos="zoom-in"><a href="./blog.html">Blog </a></li>
+              <li data-aos="zoom-in"><a href="./News.html">News</a></li>
+            </ul>
+          </div>
+          <div class="ml-[0px] sm:ml-[70px]">
+            <h1 data-aos="zoom-in" class="text-[#fff] text-[25px] mb-[70px]">Utility</h1>
+            <ul class="text-[#fff] gap-[20px] flex flex-col">
+              <li data-aos="zoom-in"><a href="./about.html">Style Guide</a></li>
+              <li data-aos="zoom-in"><a href="./Project.html">Changelog</a></li>
+              <li data-aos="zoom-in"><a href="./Service.html">Licenses </a></li>
+              <li data-aos="zoom-in"><a href="./blog.html">Protected</a></li>
+              <li data-aos="zoom-in"><a href="./News.html">Not Found </a></li>
+            </ul>
+          </div>
+          <div class="max-w-[317px]">
+            <h1 data-aos="zoom-in" class="text-[#fff] text-[25px] mb-[70px]">Subscribe</h1>
+            <form>
+              <input data-aos="zoom-in"
+                type="email"
+                name=""
+                id=""
+                class="bg-transparent border-[#fff] text-[#fff] w-full"
+                placeholder="Email here*"
+              />
+            </form>
+            <br />
+            <div class="block sm:flex justify-between items-center gap-[20px]">
+              <button v
+                class="w-[148px] mr-[20px] h-[60px] bg-[#FFDA56] hover:scale-110 transition-[0.3s] mb-[20px]"
+                type="submit"
+              >
+                Send Now
+              </button>
+
+              <br />
+              <ul class="flex gap-[20px]">
+                <li data-aos="zoom-in">
+                  <a href="https://www.facebook.com/?locale=ru_RU">
+                    <img
+                      class="hover:scale-125 transition-[0.3s] w-[24px] w-full"
+                      src="../img/Facebook.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li data-aos="zoom-in">
+                  <a href="https://x.com/?lang=ru">
+                    <img
+                      class="hover:scale-125 transition-[0.3s] w-[24px] w-full"
+                      src="../img/Twitter.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li data-aos="zoom-in">
+                  <a href="https://uz.linkedin.com/">
+                    <img
+                      class="hover:scale-125 transition-[0.3s] w-[24px] w-full"
+                      src="../img/Linkdin.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+        <hr class="text-[#FFFFFF14]" />
+        <br />
+        <div class="max-w-[1200px] mx-auto block md:flex justify-between">
+          <h1 data-aos="zoom-in" class="text-[16px] text-[#fff]">
+            Copyright © TransitFlow | Designed by VictorFlow - Powered by
+            Webflow.
+          </h1>
+          <br />
+          <ul class="text-[#8388A7] flex gap-[30px]">
+            <li data-aos="zoom-in">Style Guide</li>
+            <li data-aos="zoom-in">Licenses</li>
+            <li data-aos="zoom-in">Changelog</li>
+            <li data-aos="zoom-in">Password</li>
+          </ul>
+        </div>
+        <br />
+      </section>
+    </main>
+  <button class="btn-scroll hidden p-[10px] flex justify-center items-center rounded-full bg-[#1C1F35E8] fixed bottom-[30px] right-[30px]">
+ <a href="#head" class="">
+<svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+</svg>
+</a>
+      </button>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+<script src="../js/prj.js"></script>
+  </body>
+</html>

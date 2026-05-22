@@ -1,0 +1,1286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<link rel="stylesheet" href="./html.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="id">
+      <section class="">
+        <div class="loading">
+          <!-- From Uiverse.io by chase2k25 -->
+          <div class="cards">
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+            <div class="card">
+              <div class="face front"></div>
+              <div class="face back"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <header id="head" class="bg-[#091242] py-[40px]">
+      <div class="container mx-auto flex justify-between items-center p-[20px]">
+        <img src="./img/Logo.svg" alt="" />
+        <ul class="flex gap-[40px] max-[1092px]:hidden">
+          <li>
+            <div class="flex items-center gap-2.5">
+              <img src="./img/Icon.svg" alt="icon" />
+              <div class="font-medium text-heading">
+                <div class="text-[#FFF]">Mon - Sat 9.00 - 18.00</div>
+                <div class="text-sm text-[#fff] font-normal text-body">
+                  Sunday Closed
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-2.5">
+              <img src="./img/Icon (1).svg" alt="icon" />
+              <div class="font-medium text-heading">
+                <div class="text-[#FFF]">Email</div>
+                <div class="text-sm text-[#fff] font-normal text-body">
+                  u00209036@gmail.com
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-2.5">
+              <img src="./img/Icon (2).svg" alt="icon" />
+              <div class="font-medium text-heading">
+                <div class="text-[#FFF]">Telephone</div>
+                <div class="text-sm text-[#fff] font-normal text-body">
+                  <a href="tel:+998333201018">+998333201018</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- drawer init and show -->
+        <div class="text-center hidden max-[1092px]:block">
+          <button
+            class="inline-flex items-center justify-center bg-[#0145f2]/50 rounded-[15px] text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+            type="button"
+            data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation"
+            aria-controls="drawer-navigation"
+          >
+            <svg
+              class="w-[32px] h-[32px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.4"
+                d="M18 6H6m12 4H6m12 4H6m12 4H6"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- drawer component -->
+        <div
+          id="drawer-navigation"
+          class="backdrop-blur-[8px] bg-[#091242]/50 fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-primary-soft w-80 border-e border-default"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <div
+            class="border-b border-default border-[#fff] pb-4 flex items-center"
+          >
+            <a
+              href="https://flowbite.com/"
+              class="flex items-center space-x-2 rtl:space-x-reverse"
+            >
+              <img src="./img/Logo.svg" alt="logo" />
+            </a>
+            <button
+              type="button"
+              data-drawer-hide="drawer-navigation"
+              aria-controls="drawer-navigation"
+              class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 color-[#fff]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only cursor-pointer">Close menu</span>
+            </button>
+          </div>
+          <div class="py-5 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li
+                class="text-[#fff] bg-[#091242] hover:border-[2px] border-solid border-[fff] rounded-[20px]"
+              >
+                <a
+                  href="/index.html"
+                  class="border-b-[2px] border-b-solid border-b-[Transporting] transition-all-[0.3s]"
+                  ><div class="p-5">Home</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./pages/about.html"
+                  ><div class="p-5">About</div></a
+                >
+              </li>
+
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./pages/Project.html"
+                  ><div class="p-5">Project</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./pages/contact.html"
+                  ><div class="p-5">Contact</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./pages/Service.html"
+                  ><div class="p-5">Service</div>
+                </a>
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./pages/blog.html"
+                  ><div class="p-5">blog</div></a
+                >
+              </li>
+              <li
+                class="text-[#fff] bg-[#091242] rounded-[20px] hover:border-[2px] border-solid border-[#fff] rounded-[20px]"
+              >
+                <a
+                  class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                  href="./pages/News.html"
+                >
+                  <div class="p-5">Team</div></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="bg-[url(./img/bg.jpg)] bg-no-repaet bg-cover bg-center max-[1092px]:pt-[176px]"
+    >
+      <section class="bg-[#000]/50 max-[1092px]:hidden">
+        <nav
+          class="flex justify-between items-center container mx-auto px-[20px]"
+        >
+          <ul class="flex gap-[60px] text-[#fff]">
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./pages/about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./pages/Project.html"
+                >Project</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./pages/Services.html"
+                >Servise</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./pages/contact.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./pages/blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-[2px] border-b-solid border-b-[orange] transition-all-[0.3s]"
+                href="./pages/News.html"
+                >Team</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center">
+            <ul class="flex gap-[30px] mr-[50px] max-[1280px]:hidden">
+              <li>
+                <a href="https://www.instagram.com/">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="./img/Instagram.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/?locale=ru_RU">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="./img/Facebook.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/?lang=ru">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="./img/Twitter.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://uz.linkedin.com/">
+                  <img
+                    class="hover:scale-125 transition-[0.3s]"
+                    src="./img/Linkdin.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+            <button
+              class="w-[216px] h-[78px] bg-[#fff] hover:bg-[#FFDA56] transition-[0.3s] cursor-pointer"
+            >
+              Request Quote
+            </button>
+          </div>
+        </nav>
+      </section>
+      <section class="container mx-auto px-[20px]">
+        <div class="max-w-[571px] mt-[176px] max-[1025px]:mt-[0px]">
+          <p class="text-[#fff] text-[14px] bg-[#041C3780] w-[230px]">
+            Logistics & Supply Chain Solutions
+          </p>
+          <h1 class="text-[#fff] text-[50px] md:text-[60px] font-bold">
+            Your Gateway to any Destination in the World
+          </h1>
+          <p class="text-[16px] text-[#fff]">
+            In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie
+            in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus
+            finibus, enim diam interdum nulla, sed laoreet risus lectus.
+          </p>
+          <br />
+          <button
+            class="cursor-pointer bg-[#FFDA56] hover:bg-[#fff] hover:text-[#000] hover:scale-110 transition-[0.3] px-[46px] py-[19px] mb-[176px]"
+          >
+            Explore More
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <main>
+      <section
+        class="container mx-auto block md:flex justify-between py-[132px] p-[20px]"
+      >
+        <div data-aos="zoom-in" class="max-w-[294px]">
+          <p class="text-[16px] bg-[##E8E8E880] w-[92px]">What We Do</p>
+          <h1 class="text-[40px] text-[#1C1F35]">
+            Safe & Reliable Cargo Solutions
+          </h1>
+        </div>
+        <br />
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[80px]">
+          <div data-aos="zoom-in" class="flex items-center gap-2.5 max-w-[391px] justify-between">
+            <img class="w-15 h-15 mr-[20px]" src="./img/Icon (3).svg" alt="" />
+            <div class="font-medium text-heading">
+              <div class="text-[25px] mb-[10px]">Sea Transport Services</div>
+              <div class="text-sm font-normal text-body">
+                Following the quality of our service thus having gained trust of
+                our many clients.
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in" class="flex items-center gap-2.5 max-w-[391px] justify-between">
+            <img class="w-15 h-15 mr-[20px]" src="./img/Icon (4).svg" alt="" />
+            <div class="font-medium text-heading">
+              <div class="text-[25px] mb-[10px]">Warehousing Services</div>
+              <div class="text-sm font-normal text-body">
+                Following the quality of our service thus having gained trust of
+                our many clients.
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in" class="flex items-center gap-2.5 max-w-[391px] justify-between">
+            <img class="w-15 h-15 mr-[20px]" src="./img/Icon (7).svg" alt="" />
+            <div class="font-medium text-heading">
+              <div class="text-[25px] mb-[10px]">Air Fright Services</div>
+              <div class="text-sm font-normal text-body">
+                Following the quality of our service thus having gained trust of
+                our many clients.
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in" class="flex items-center gap-2.5 max-w-[391px] justify-between">
+            <img class="w-15 h-15 mr-[20px]" src="./img/Icon (8).svg" alt="" />
+            <div class="font-medium text-heading">
+              <div class="text-[25px] mb-[10px]">Local Shipping Services</div>
+              <div class="text-sm font-normal text-body">
+                Following the quality of our service thus having gained trust of
+                our many clients.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main
+      class="bg-[url(./img/bg-2.png)] bg-no-repaet bg-cover bg-center my-[30px] py-[30px]"
+    >
+      <section
+        class="max-w-[1200px] mx-auto block lg:flex bg-[#fff] my-[30px] p-[20px] justify-between"
+      >
+        <div data-aos="zoom-in" class="max-w-[464px] my-[30px]">
+          <p data-aos="zoom-in" class="text-[14px]">Why Us</p>
+          <h1 data-aos="zoom-in" class="text-[#1C1F35] text-[36px]">
+            We provide full range global logistics solution
+          </h1>
+          <p data-aos="zoom-in" class="text-[#666C89] text-[16px]">
+            Leverage agile frameworks to provide a robust synopsis for strategy
+            foster collaborative thinking to further the overall value
+            proposition. Organically grow the holistic world view of disruptive
+            innovation via workplace diversity and empowerment.
+          </p>
+
+          <div data-aos="zoom-in" class="flex items-center gap-2.5">
+            <img
+              class="w-15 h-15 rounded-full"
+              src="./img/Icon (9).svg"
+              alt=""
+            />
+            <div data-aos="zoom-in" class="font-medium text-heading">
+              <div data-aos="zoom-in">Delivery on Time</div>
+            </div>
+          </div>
+          <br />
+          <div data-aos="zoom-in" class="flex items-center gap-2.5">
+            <img
+              class="w-15 h-15 rounded-full"
+              src="./img/Icon (10).svg"
+              alt=""
+            />
+            <div data-aos="zoom-in" class="font-medium text-heading">
+              <div data-aos="zoom-in">Optimized Travel Cost</div>
+            </div>
+          </div>
+        </div>
+        <img data-aos="zoom-in" src="./img/Images.png" alt="" class="max-w-565px" />
+      </section>
+    </main>
+    <br />
+    <main>
+      <section class="container mx-auto">
+        <div
+          class="max-w-[1020px] mx-auto block md:flex justify-between px-[61px] py-[32px]"
+        >
+          <div data-aos="zoom-in" class="flex max-w-[376px] gap-[16px] items-center">
+            <h1 class="text-[50px]">1294</h1>
+            <img src="./img/Pattern.svg" alt="" />
+            <p class="text-[20px]">Delivered Packages</p>
+          </div>
+          <div data-aos="zoom-in" class="flex max-w-[376px] gap-[16px] items-center">
+            <h1 class="text-[50px]">3594</h1>
+            <img src="./img/Pattern.svg" alt="" />
+            <p class="text-[20px]">Satisfied Clients</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br />
+    <main
+      class="bg-[#FFDA56] my-[20px] py-[30px] flex flex-col justify-between items-center"
+    >
+      <h1 data-aos="zoom-in" class="text-[#1C1F35] text-[35px] text-center">
+        Transporting Across The World
+      </h1>
+      <br />
+      <section class="px-[10px]">
+        <div  data-aos="zoom-in" class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-[18px]">
+          <div data-aos="zoom-in" class="hover:scale-105 transition-[0.3s]">
+            <img src="./img/1 (1).png " alt="" />
+
+          </div>
+          <div data-aos="zoom-in" class="hover:scale-105 transition-[0.3s]">
+            <img src="./img/2.png " alt="" />
+          </div>
+          <div data-aos="zoom-in" class="hover:scale-105 transition-[0.3s]">
+            <img src="./img/3.png " alt="" />
+          </div>
+          <div data-aos="zoom-in" class="hover:scale-105 transition-[0.3s]">
+            <img src="./img/4.png " alt="" />
+          </div>
+          <div data-aos="zoom-in" class="hover:scale-105 transition-[0.3s]">
+            <img src="./img/5.png " alt="" />
+          </div>
+        </div>
+      </section>
+      <br />
+      <button data-aos="zoom-in"
+        class="bg-[#1C1F35] hover:bg-[#000] transition-[0.3s] text-[#fff] w-[194px] hover:scale-110 h-[60px] text-[center]"
+      >
+        More Work
+      </button>
+    </main>
+    <br />
+    <main>
+      <section class="container mx-auto">
+        <h2 data-aos="zoom-in" class="p-[20px]">Testimonial</h2>
+        <h1 data-aos="zoom-in" class="px-[20px] text-[35px]">What Our Customer Say</h1>
+        <br />
+        <div data-aos="zoom-in"
+          id="animation-carousel"
+          class="relative max-w-[1200px] mx-auto p-[20px]"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+            <!-- Item 1 -->
+            <div
+              class="hidden block md:flex bg-[#fff] duration-200 ease-linear"
+              data-carousel-item
+            >
+              <div class="coment bg-[#fff] max-w-[600px] p-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="./img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2015
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="./img/Star (1).svg" alt="" />
+              </div>
+              <div
+                class="coment-2 bg-[#091242] max-w-[600px] text-[#fff] p-[20px]"
+              >
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="./img/User (1).png"
+                        alt=""
+                        width="30"
+                        height=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2012
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="./img/Star (1).svg" alt="" />
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="hidden block md:flex bg-[#fff] duration-200 ease-linear"
+              data-carousel-item
+            >
+              <div class="coment bg-[#fff] max-w-[600px] p-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="./img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2013
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="./img/Star (1).svg" alt="" />
+              </div>
+              <div
+                class="coment-2 bg-[#091242] max-w-[600px] text-[#fff] p-[20px]"
+              >
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="./img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2017
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="./img/Star (1).svg" alt="" />
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="hidden block md:flex bg-[#fff] duration-200 ease-linear"
+              data-carousel-item="active"
+            >
+              <div class="coment bg-[#fff] max-w-[600px] p-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="./img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2016
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./img/_.svg" alt="" />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="./img/Star (1).svg" alt="" />
+              </div>
+              <div
+                class="coment-2 bg-[#091242] max-w-[600px] text-[#fff] p-[20px]"
+              >
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="flex justify-between">
+                      <img
+                        class="w-20 h-20 rounded-full"
+                        src="./img/User.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="font-medium text-heading">
+                      <div>Jese Leos</div>
+                      <div class="text-sm font-normal text-body">
+                        Joined in August 2013
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    class="max-[700px]:max-w-[20px]"
+                    src="./img/_.svg"
+                    alt=""
+                  />
+                </div>
+                <br />
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <br />
+                <img src="./img/Star (1).svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- Slider controls -->
+
+          <button
+            type="button"
+            class="absolute top-[-230px] left-[1050px] max-[767px]:left-[450px] max-[767px]:top-[-140px] max-[1460px]:left-[1050px] max-[1280px]:left-[870px] max-[1023px]:left-[600px] max-[1460px]:top-[-230px] max-[600px]:left-[200px] start-0 z-30 flex items-center justify-end h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-12 h-12 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-[#FFB629] group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none rounded-full"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m15 19-7-7 7-7"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-[-230px] max-[1460px]:top-[-230px] max-[767px]:top-[-140px] end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-12 h-12 rounded-base bg-[#FFB629] dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-[#091242] group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none rounded-full"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m9 5 7 7-7 7"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <br />
+    <br />
+    <main class="flex flex-col items-center mx-auto">
+      <h1 data-aos="zoom-in" class="text-center text-[35px] text-[#1C1F35]">Meet Expert Team</h1>
+      <br />
+      <section
+        class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-[40px]"
+      >
+        <div data-aos="zoom-in" class="max-w-[364px]">
+          <img src="./img-2/Image (3).png" alt="" />
+          <div class="p-[25px] bg-[#091242] relative">
+            <h1 class="text-[#fff] text-[20px]">Jessca Arow</h1>
+            <h2 class="text-[#fff] text-[16px]">Designer</h2>
+            <div
+              class="bg-[#FFB629] max-w-[135px] absolute bottom-19 right-0 flex gap-[15px] p-[20px]"
+            >
+              <a href="https://www.instagram.com/" class="">
+                <img
+                  class="transition-[0.3s] hover:scale-125"
+                  src="./img-2/3.svg"
+                  alt=""
+                  width="24 "
+                  height="24"
+                  class=""
+              /></a>
+
+              <a href="https://www.facebook.com/?locale=ru_RU">
+                <img
+                  class="transition-[0.3s] hover:scale-125"
+                  src="./img-2/2.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></a>
+
+              <a href="https://x.com/?lang=ru">
+                <img
+                  class="transition-[0.3s] hover:scale-125"
+                  src="./img-2/1.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="max-w-[364px]">
+          <img src="./img-2/Photo.png" alt="" />
+          <div class="p-[25px] bg-[#091242] relative">
+            <h1 class="text-[#fff] text-[20px]">Artur Tramp</h1>
+            <h2 class="text-[#fff] text-[16px]">Designer</h2>
+            <div
+              class="bg-[#FFB629] max-w-[135px] absolute bottom-19 right-0 flex gap-[15px] p-[20px]"
+            >
+              <a href="https://www.instagram.com/">
+                <img
+                  class="transition-[0.3s] hover:scale-125"
+                  src="./img-2/3.svg"
+                  alt=""
+                  width="24 "
+                  height="24"
+              /></a>
+
+              <a href="https://www.facebook.com/?locale=ru_RU">
+                <img
+                  class="transition-[0.3s] hover:scale-125"
+                  src="./img-2/2.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></a>
+
+              <a href="https://x.com/?lang=ru">
+                <img
+                  class="transition-[0.3s] hover:scale-125"
+                  src="./img-2/1.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="max-w-[364px]">
+          <img src="./img-2/Image (4).png" alt="" />
+          <div class="p-[25px] bg-[#091242] relative">
+            <h1 class="text-[#fff] text-[20px]">Alex Alpaka</h1>
+            <h2 class="text-[#fff] text-[16px]">Designer</h2>
+            <div
+              class="bg-[#FFB629] max-w-[135px] absolute bottom-19 right-0 flex gap-[15px] p-[20px]"
+            >
+              <a href="https://www.instagram.com/">
+                <img
+                  class="transition-[0.3s] hover:scale-125"
+                  src="./img-2/3.svg"
+                  alt=""
+                  width="24 "
+                  height="24"
+              /></a>
+
+              <a href="https://www.facebook.com/?locale=ru_RU">
+                <img
+                  class="transition-[0.3s] hover:scale-125"
+                  src="./img-2/2.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></a>
+
+              <a href="https://x.com/?lang=ru">
+                <img
+                  class="transition-[0.3s] hover:scale-125"
+                  src="./img-2/1.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br />
+    <br />
+    <main class="bg-[#091242] pt-[140px] pb-[140px]">
+      <section class="container mx-auto">
+        <div
+          class="container mx-auto block lg:flex gap-[20px] justify-between px-[20px]"
+        >
+          <div data-aos="zoom-in" class="max-w-[355px]">
+            <h1 class="text-[#fff] text-[35px]">Get in touch with us</h1>
+            <p class="text-[#fff] text-[16px]">
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy foster collaborative thinking to further the overall
+              value.
+            </p>
+            <br />
+            <ul class="flex flex-col gap-[40px] max-[1025px]:hidden">
+              <li>
+                <div class="flex items-center gap-2.5">
+                  <img src="./img/Icon.svg" alt="icon" />
+                  <div class="font-medium text-heading">
+                    <div class="text-[#FFF]">Mon - Sat 9.00 - 18.00</div>
+                    <div class="text-sm text-[#fff] font-normal text-body">
+                      Sunday Closed
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2.5">
+                  <img src="./img/Icon (1).svg" alt="icon" />
+                  <div class="font-medium text-heading">
+                    <div class="text-[#FFF]">Email</div>
+                    <div class="text-sm text-[#fff] font-normal text-body">
+                      u00209036@gmail.com
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2.5">
+                  <img src="./img/Icon (2).svg" alt="icon" />
+                  <div class="font-medium text-heading">
+                    <div class="text-[#FFF]">Telephone</div>
+                    <div class="text-sm text-[#fff] font-normal text-body">
+                      <a href="tel:+998333201018">+998333201018</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div data-aos="zoom-in" class="max-w-[758px]">
+            <form>
+              <div
+                class="max-[758px] flex max-[790px]:block justify-between gap-[20px] pb-[20px] max-[773px]:pb-[0px]"
+              >
+                <input
+                  class="py-[21px] pr-[170px] max-[790px]:mb-[20px] max-[790px]:pr-[110px] bg-transparent border-[#fff] text-[#fff]"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Your name*"
+                  required
+                />
+
+                <input
+                  class="py-[21px] pr-[170px] max-[790px]:mb-[20px] max-[790px]:pr-[110px] bg-transparent border-[#fff] text-[#fff]"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Email*"
+                  required
+                />
+              </div>
+              <div class="flex max-[790px]:block justify-between gap-[20px]">
+                <input
+                  class="py-[21px] pr-[170px] max-[790px]:mb-[20px] max-[790px]:pr-[110px] bg-transparent border-[#fff] text-[#fff]"
+                  type="tel"
+                  name=""
+                  id=""
+                  placeholder="Phone Number*"
+                  required
+                />
+                <input
+                  class="py-[21px] pr-[170px] max-[790px]:mb-[20px] max-[790px]:pr-[110px] bg-transparent border-[#fff] text-[#fff]"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="City*"
+                  required
+                />
+              </div>
+              <br />
+              <textarea
+                class="w-full border-[#fff] h-[154px] text-[#fff] mb-[30px]"
+                name=""
+                id=""
+                placeholder="Your Message"
+              >
+              </textarea>
+              <button
+                type="submit"
+                class="py-[19px] px-[34px] bg-[#FFB629] hover:scale-110 transition-[0.3s]"
+              >
+                Submit Message
+              </button>
+            </form>
+          </div>
+        </div>
+        <form></form>
+      </section>
+    </main>
+    <br />
+    <br />
+    <main>
+      <section class="container mx-auto p-[20px]">
+        <h1 data-aos="zoom-in" class="text-[32px] text-center">Our Latest News</h1>
+        <br />
+        <hr data-aos="zoom-in" class="max-w-[900px] text-[#000] mx-auto" />
+        <br />
+        <div class="grid grid-row-3 gap-[30px]">
+          <div class="max-w-[950px] mx-auto flex max-[1023px]:block gap-[20px]">
+            <div data-aos="zoom-in"
+              class="bg-[url(./img-2/bg.png)] bg-cover bg-no-repaet bg-center max-w-[453px] flex justify-center items-center max-w-[453px] w-full px-[250px] max-[1023px]:p-[50px]"
+            >
+              <a href="./pages/News.html">
+                <div data-aos="zoom-in"
+                  class="px-[100px] py-[70px] flex max-w-[373px] transition-[0.3s] hover:bg-[#1C1F35E8] justify-center items-center text-[Transporting] text-[#fff] text-transparent hover:text-[#fff] hover:cursor-pointer"
+                >
+                  Read More
+                </div></a
+              >
+            </div>
+            <img data-aos="zoom-in" class="w-[85px] h-[122px]" src="./img-2/Date.png" alt="" />
+            <div data-aos="zoom-in" class="max-w-[335px] p-[10px]">
+              <h1 data-aos="zoom-in" class="text-[25px]">
+                Inland freight a worthy solution for your business
+              </h1>
+              <p data-aos="zoom-in">
+                We are dedicated in creating added value for our customers by
+                implementing modern technology in our work.
+              </p>
+              <br />
+              <ul data-aos="zoom-in" class="list-disc">
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staffs</li>
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staffs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="max-w-[950px] mx-auto flex max-[1023px]:block gap-[20px]">
+            <div data-aos="zoom-in"
+              class="bg-[url(./img-2/BG-.png)] bg-cover bg-no-repaet bg-center max-w-[453px] flex justify-center items-center max-w-[453px] w-full px-[250px] max-[1023px]:p-[50px]"
+            >
+              <a href="./pages/News.html">
+                <div data-aos="zoom-in"
+                  class="px-[100px] py-[70px] flex max-w-[373px] transition-[0.3s] hover:bg-[#1C1F35E8] justify-center items-center text-[Transporting] text-[#fff] text-transparent hover:text-[#fff] hover:cursor-pointer"
+                >
+                  Read More
+                </div></a
+              >
+            </div>
+            <img data-aos="zoom-in" class="w-[85px] h-[122px]" src="./img-2/Date (1).png" alt="" />
+            <div data-aos="zoom-in" class="max-w-[335px] p-[10px]">
+              <h1 data-aos="zoom-in" class="text-[25px]">
+                How technology can help redraw the supply chain map
+              </h1>
+              <p data-aos="zoom-in">
+                We are dedicated in creating added value for our customers by
+                implementing modern technology in our work.
+              </p>
+              <br />
+              <ul data-aos="zoom-in" class="list-disc">
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staffs</li>
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staffs</li>
+              </ul>
+            </div>
+          </div>
+          <div data-aos="zoom-in" class="max-w-[950px] mx-auto flex max-[1023px]:block gap-[20px]">
+            <div data-aos="zoom-in"
+              class="bg-[url(./img-2/BBG.png)] bg-cover bg-no-repaet bg-center max-w-[453px] flex justify-center items-center max-w-[453px] w-full px-[250px] max-[1023px]:p-[50px]"
+            >
+              <a href="./pages/News.html">
+                <div data-aos="zoom-in"
+                  class="px-[100px] py-[70px] flex max-w-[373px] transition-[0.3s] hover:bg-[#1C1F35E8] justify-center items-center text-[Transporting] text-[#fff] text-transparent hover:text-[#fff] hover:cursor-pointer"
+                >
+                  Read More
+                </div></a
+              >
+            </div>
+            <img data-aos="zoom-in" class="w-[85px] h-[122px]" src="./img-2/Date (2).png" alt="" />
+            <div data-aos="zoom-in" class="max-w-[335px] p-[10px]">
+              <h1 data-aos="zoom-in" class="text-[25px]">
+                Five things you should have ready for your broker
+              </h1>
+              <p data-aos="zoom-in">
+                We are dedicated in creating added value for our customers by
+                implementing modern technology in our work.
+              </p>
+              <br />
+              <ul data-aos="zoom-in" class="list-disc">
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staffs</li>
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staffs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+        <center>
+          <a href="./pages/News.html">
+            <button data-aos="zoom-in"
+              class="bg-[#1C1F35] hover:bg-[#000] transition-[0.3s] text-[#fff] w-[194px] hover:scale-110 h-[60px] text-[center]"
+            >
+              More News
+            </button>
+          </a>
+        </center>
+      </section>
+    </main>
+
+    <main>
+      <img src="./img-2/Image (6).png" alt="" class="w-full" />
+      <section class="bg-[#091242]">
+        <br />
+        <div
+          class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 container mx-auto justify-between p-[20px] gap-[20px]"
+        >
+          <div data-aos="zoom-in" class="max-w-[319px] flex flex-col mr-[0px] sm:mr-[100px]">
+            <img src="./img/Logo.svg" alt="" class="max-w-[317px] w-full" />
+            <br />
+            <br />
+
+            <h1  class="text-[16px] text-[#fff]">
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy collaborative thinking to further the overall value
+              proposition.
+            </h1>
+            <br />
+            <div  data-aos="zoom-in" class="">
+              <div  data-aos="zoom-in" class="flex items-center gap-2.5">
+                <img  data-aos="zoom-in" src="./img/Icon (1).svg" alt="icon" />
+                <div  data-aos="zoom-in" class="font-medium text-heading">
+                  <div  data-aos="zoom-in" class="text-[#FFF]">Email</div>
+                  <div  data-aos="zoom-in" class="text-sm text-[#fff] font-normal text-body">
+                    u00209036@gmail.com
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div  data-aos="zoom-in" class="flex items-center gap-2.5">
+                <img src="./img/Icon (2).svg" alt="icon" />
+                <div  data-aos="zoom-in" class="font-medium text-heading">
+                  <div  data-aos="zoom-in" class="text-[#FFF]">Telephone</div>
+                  <div  data-aos="zoom-in" class="text-sm text-[#fff] font-normal text-body">
+                    <a  data-aos="zoom-in" href="tel:+998333201018">+998333201018</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div  data-aos="zoom-in" class="ml-[100px]">
+            <h1  data-aos="zoom-in" class="text-[#fff] text-[25px] mb-[0px] sm:mb-[70px]">Pages</h1>
+            <ul  data-aos="zoom-in" class="text-[#fff] gap-[20px] flex flex-col">
+              <li><a href="./pages/about.html">Abaut us </a></li>
+              <li><a href="./pages/Project.html">Project </a></li>
+              <li><a href="./pages/Service.html">Service </a></li>
+              <li><a href="./pages/blog.html">Blog </a></li>
+              <li><a href="./pages/News.html">News</a></li>
+            </ul>
+          </div>
+          <div  data-aos="zoom-in" class="ml-[0px] sm:ml-[70px]">
+            <h1  data-aos="zoom-in" class="text-[#fff] text-[25px] mb-[70px]">Utility</h1>
+            <ul  data-aos="zoom-in" class="text-[#fff] gap-[20px] flex flex-col">
+              <li><a href="./pages/about.html">Style Guide</a></li>
+              <li><a href="./pages/Project.html">Changelog</a></li>
+              <li><a href="./pages/Service.html">Licenses </a></li>
+              <li><a href="./pages/blog.html">Protected</a></li>
+              <li><a href="./pages/News.html">Not Found </a></li>
+            </ul>
+          </div>
+          <div  data-aos="zoom-in" class="max-w-[317px]">
+            <h1  data-aos="zoom-in" class="text-[#fff] text-[25px] mb-[70px]">Subscribe</h1>
+            <form  data-aos="zoom-in">
+              <input
+                type="email"
+                name=""
+                id=""
+                class="bg-transparent border-[#fff] text-[#fff] w-full"
+                placeholder="Email here*"
+              />
+            </form>
+            <br />
+            <div v class="block sm:flex justify-between items-center gap-[20px]">
+              <button  data-aos="zoom-in"
+                class="w-[148px] mr-[20px] h-[60px] bg-[#FFDA56] hover:scale-110 transition-[0.3s] mb-[20px]"
+                type="submit"
+              >
+                Send Now
+              </button>
+
+              <br />
+              <ul  data-aos="zoom-in" class="flex gap-[20px]">
+                <li>
+                  <a href="https://www.facebook.com/?locale=ru_RU">
+                    <img
+                      class="hover:scale-125 transition-[0.3s] w-[24px] w-full"
+                      src="./img/Facebook.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://x.com/?lang=ru">
+                    <img
+                      class="hover:scale-125 transition-[0.3s] w-[24px] w-full"
+                      src="./img/Twitter.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://uz.linkedin.com/">
+                    <img
+                      class="hover:scale-125 transition-[0.3s] w-[24px] w-full"
+                      src="./img/Linkdin.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+        <hr  data-aos="zoom-in" class="text-[#FFFFFF14]" />
+        <br />
+        <div  data-aos="zoom-in" class="max-w-[1200px] mx-auto block md:flex justify-between">
+          <h1 class="text-[16px] text-[#fff]">
+            Copyright © TransitFlow | Designed by VictorFlow - Powered by
+            Webflow.
+          </h1>
+          <br />
+          <ul  data-aos="zoom-in" class="text-[#8388A7] flex gap-[30px]">
+            <li>Style Guide</li>
+            <li>Licenses</li>
+            <li>Changelog</li>
+            <li>Password</li>
+          </ul>
+        </div>
+        <br />
+      </section>
+    </main>
+
+   
+      <button class="btn-scroll hidden p-[10px] flex justify-center items-center rounded-full bg-[#1C1F35E8] fixed bottom-[200px] right-[30px]">
+ <a href="#head" class="">
+<svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+</svg>
+</a>
+      </button>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+    <script src="https://cdn.jotfor.ms/agent/embedjs/019db9c57be671b69ce1a534cf52de4c377b/embed.js"></script>
+    <script>
+  AOS.init();
+</script>
+<script src="./js/index.js"></script>
+  </body>
+</html>
